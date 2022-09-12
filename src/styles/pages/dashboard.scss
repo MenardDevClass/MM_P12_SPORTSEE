@@ -1,0 +1,92 @@
+.mainContent {
+  display: flex;
+  margin-left: 8.1%;
+  display: flex;
+  flex-direction: column;
+  .graphsAndDailyContainer {
+    display: flex;
+    margin-left: 8.1%;
+    .graphsContainer {
+      width: 70%;
+      height: 613px;
+      .dailyActivity {
+        width: 100%;
+        height: 320px;
+        background-color: #fbfbfb;
+        border-radius: 5px;
+      }
+      .otherGraph {
+        width: 100%;
+        height: 263px;
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        .averageSessions {
+          background-color: #ff0000;
+          width: 32%;
+          height: 263px;
+          border-radius: 5px;
+          .pDescription {
+            font-size: 15px;
+            color: aliceblue;
+            opacity: 0.6;
+            margin-top: 29px;
+            margin-left: 34px;
+          }
+        }
+        .performances {
+          background-color: rgb(46, 51, 51);
+          width: 32%;
+          height: 263px;
+          border-radius: 5px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .score {
+          width: 32%;
+          height: 263px;
+          border-radius: 5px;
+          background-color: #fbfbfb;
+          position: relative;
+          .pScore {
+            margin-left: 30px;
+            margin-top: 24px;
+          }
+
+          .radarBarChart {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+          }
+          .userObjectif {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            .percent {
+              text-align: center;
+              font-size: 26px;
+              font-weight: 500;
+            }
+            p {
+              margin: 0;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+    .dailyIntake {
+      width: 22%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-left: 20px;
+      .cardInfoContainer {
+        width: 100%;
+      }
+    }
+  }
+}
